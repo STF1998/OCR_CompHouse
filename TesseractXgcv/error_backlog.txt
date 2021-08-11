@@ -1,0 +1,85 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pebble/common.py", line 174, in process_execute
+    return function(*args, **kwargs)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/main.py", line 82, in driver
+    data = ocr.OCR_pdf(pathway)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 510, in OCR_pdf
+    Balance_information = investigate_accounts(Balance_sheet(), df, all_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 435, in investigate_accounts
+    return analyse_pages(pages, df, page_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 412, in analyse_pages
+    ordered_df = get_labels_and_values(table_dataframe)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 152, in get_labels_and_values
+    return pandas.DataFrame(data)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/frame.py", line 529, in __init__
+    mgr = init_dict(data, index, columns, dtype=dtype)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 287, in init_dict
+    return arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 80, in arrays_to_mgr
+    index = extract_index(arrays)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 401, in extract_index
+    raise ValueError("arrays must all be same length")
+ValueError: arrays must all be same length
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pebble/common.py", line 174, in process_execute
+    return function(*args, **kwargs)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/main.py", line 82, in driver
+    data = ocr.OCR_pdf(pathway)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 510, in OCR_pdf
+    Balance_information = investigate_accounts(Balance_sheet(), df, all_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 435, in investigate_accounts
+    return analyse_pages(pages, df, page_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 414, in analyse_pages
+    ordered_df = integer_conversion(ordered_df)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 366, in integer_conversion
+    ordered_df.iloc[i]["t"] = to_int(ordered_df.iloc[i]["t"])
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 360, in <lambda>
+    to_int = lambda continued_line: int(continued_line.replace("(", "-"))
+ValueError: invalid literal for int() with base 10: '-70972-47392-5000-541-75972-47933'
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pebble/common.py", line 174, in process_execute
+    return function(*args, **kwargs)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/main.py", line 82, in driver
+    data = ocr.OCR_pdf(pathway)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 512, in OCR_pdf
+    PandL_information = investigate_accounts(PandL(), df, all_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 435, in investigate_accounts
+    return analyse_pages(pages, df, page_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 414, in analyse_pages
+    ordered_df = integer_conversion(ordered_df)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 366, in integer_conversion
+    ordered_df.iloc[i]["t"] = to_int(ordered_df.iloc[i]["t"])
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 360, in <lambda>
+    to_int = lambda continued_line: int(continued_line.replace("(", "-"))
+ValueError: invalid literal for int() with base 10: '-'
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pebble/common.py", line 174, in process_execute
+    return function(*args, **kwargs)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/main.py", line 82, in driver
+    data = ocr.OCR_pdf(pathway)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 505, in OCR_pdf
+    page_lines = get_lines(df[df['pdf_page'] == page], "")
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 218, in get_lines
+    if bool(re.match(r'^[ \t]+$', current_row['text'])) == False and current_row['text'] != "":
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/re.py", line 191, in match
+    return _compile(pattern, flags).match(string)
+TypeError: expected string or bytes-like object
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pebble/common.py", line 174, in process_execute
+    return function(*args, **kwargs)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/main.py", line 82, in driver
+    data = ocr.OCR_pdf(pathway)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 510, in OCR_pdf
+    Balance_information = investigate_accounts(Balance_sheet(), df, all_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 435, in investigate_accounts
+    return analyse_pages(pages, df, page_lines)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 415, in analyse_pages
+    ordered_df = sort_units(ordered_df)
+  File "/Users/samfitton/Documents/MyGitProjects/ML_MastersThesis/OCR_work/OCR.py", line 306, in sort_units
+    multiplier = int(multiplier)
+ValueError: invalid literal for int() with base 10: '-'
+
